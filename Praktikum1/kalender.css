@@ -1,0 +1,37 @@
+.tampilan{
+	border: 1px solid red;
+	width: 100%;
+
+}
+.font{
+	font-family: arial;
+	
+}
+.heading {
+	text-align: center;
+}
+.lightfriday{
+	background-color: green;
+}
+.lightholidays{
+	background-color: red;
+}
+.tab{
+	border: 1px solid black;
+	margin:auto;
+}
+.jumat{
+	border: 1px solid black;
+	margin:auto;
+	background-color: red;
+}
+.libur{
+	border: 1px solid black;
+	margin:auto;
+	background-color: red;
+}
+.now{
+	border: 1px solid black;
+	margin:auto;
+	background-color: yellow;
+}

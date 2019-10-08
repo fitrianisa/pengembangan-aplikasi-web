@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="row">
+                <form action="proccessData.php" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <h1>Registration Form</h1>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for="surname">Surname</label></td>
+                            <td><input type="text" name="surname" id="surname"
+                                    value="<?php if(isset($_POST['surname'])) echo htmlspecialchars($_POST['surname'])?>">
+                            </td>
+                        </tr>
+                        <?php echo "<tr>
+                            <td></td>
+                            <td class='error'>"; if(isset($errors['surname']))echo $errors['surname']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td><label for="firstName">First Name</label></td>
+                            <td><input type="text" name="firstName" id="firstName"
+                                    value="<?php if(isset($_POST['firstName'])) echo htmlspecialchars($_POST['firstName'])?>">
+                        </tr>
+                        <?php echo "<tr>
+                            <td></td>
+                            <td class='error'>"; if(isset($errors['firstName']))echo $errors['firstName']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td><label for="lastName">Last Name</label></td>
+                            <td><input type="text" name="lastName" id="lastName"
+                                    value="<?php if(isset($_POST['lastName'])) echo htmlspecialchars($_POST['lastName'])?>">
+                        </tr>
+                        <?php echo "<tr>
+                            <td></td>
+                            <td class='error'>"; if(isset($errors['lastName']))echo $errors['lastName']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td><label for="email">Email Address</label></td>
+                            <td><input type="text" name="email" id="email"
+                                    value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email'])?>">
+                            </td>
+                        </tr>
+                        <?php echo "<tr>
+                            <td></td>
+                            <td class='error'>"; if(isset($errors['email']))echo $errors['email']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <?php echo "<tr>
+                        <td></td>
+                            <td class='error'>"; if(isset($errors['password']))echo $errors['password']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td><label for="cPassword">Confirm Password</label></td>
+                            <td><input type="password" name="cPassword" id="cPassword"></td>
+                        </tr>
+                        <?php echo "<tr>
+                            <td></td>
+                            <td class='error'>"; if(isset($errors['cPassword']))echo $errors['cPassword']; echo "</td>
+                        </tr>";?>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="submit" name="register" value="Register">
+                                <input type="reset" name="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

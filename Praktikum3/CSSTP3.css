@@ -1,0 +1,34 @@
+body{
+	background-color: White;
+	font-family: VErdana, geneva, Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+	background-color: #87ceeb;
+	width: 500px;
+	height: 300px;
+	margin: auto;
+}
+legend{
+	font-weight: bold;
+	font-size: 25px;
+}
+table{
+	padding: 25px;
+}
+tr{
+	height: 32px;
+}
+.eror{
+	text-align: right;
+}
+.posisi{
+	width: 350px;
+	text-align: right;
+}
+.lebar{
+	width: 300px;
+}
+.merah{
+	color: red;
+}
